@@ -3,7 +3,7 @@ var modalOpen = false; // State variable to prevent multiple triggers
     // Get modal and buttons
     var modal = document.getElementById('myModal');
     var openPopup = document.getElementById('openPopup');
-    var yesButton = document.getElementById('yesButton');
+   /* var yesButton = document.getElementById('yesButton');*/
     var noButton = document.getElementById('noButton');
 
     // Open the modal when the link is clicked
@@ -21,13 +21,15 @@ var modalOpen = false; // State variable to prevent multiple triggers
         modalOpen = false; // Reset state when modal closes
     });
 
-    // Redirect to the link when the "Yes" button is clicked
+    /* Redirect to the link when the "Yes" button is clicked
     yesButton.addEventListener('click', function () {
         modal.style.display = 'none';
         modalOpen = false; // Reset state when modal closes
         // Redirect to a specific URL
         window.location.href = 'https://www.paypal.com/donate?token=tjcDyeK8kDS2434QISXG5RnCc50rUFDxJ11emflsSoAT_Y0DMJQmr7DbQQlL_L1Adt5X6OVC2fWv93FW'; // Change to the desired URL
     });
+
+    */
 
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -68,8 +70,10 @@ questions.forEach(question => {
 
         if (!isActive) {
             // If not active, set padding-bottom and then set max height to its original height
-            divBelow.style.paddingBottom = '30px';
+             var paddingBottomValue = divBelow.scrollHeight * 0.08 + 'px';
+            divBelow.style.paddingBottom = paddingBottomValue;
             divBelow.style.maxHeight = divBelow.scrollHeight + 'px';
+            
             // Apply transition styles after setting maxHeight
             divBelow.style.transition = 'max-height .2s ease, padding-bottom .5s ease-in-out, opacity 0.5s ease-in-out';
             divBelow.style.position = 'static';
@@ -103,10 +107,42 @@ function changeHeaderBackground() {
     }
 }
 
-// Event listener for scroll event
-window.addEventListener('scroll', changeHeaderBackground);
+// Function to check if screen width is larger than the mobile width
+function isDesktop() {
+    return window.innerWidth > 1281; // Adjust the value as needed for mobile width
+}
+
+// Event listener for scroll event on desktop screens
+function handleScrollEvent() {
+    if (isDesktop()) {
+        window.addEventListener('scroll', changeHeaderBackground);
+    } else {
+        window.removeEventListener('scroll', changeHeaderBackground);
+        header.style.backgroundColor = 'white'; // Ensure header is white on mobile
+         header.style.borderBottom = '0.2px solid black';
+    }
+}
+
+// Initial check and add event listener if needed
+handleScrollEvent();
+
+// Event listener for window resize to handle screen width changes
+window.addEventListener('resize', handleScrollEvent);
 
 
 
+// hamburger menu
 
+document.addEventListener('DOMContentLoaded', function() {
+  var hamburgers = document.querySelectorAll('.hamburger');
+  var navLinks = document.querySelectorAll('.nav-links');
+
+  hamburgers.forEach(function(hamburger) {
+    hamburger.addEventListener('click', function() {
+      navLinks.forEach(function(navLink) {
+        navLink.classList.toggle('show');
+      });
+    });
+  });
+});
 

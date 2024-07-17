@@ -2,6 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
+		 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Selective Mutism Foundation</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<style>
@@ -18,27 +19,30 @@
 	<div class="navigation">
 		
 		<div class="logo">
-				<img src="images/logo.png">
+			<img src="images/logo.png">
 		</div>
 
+		 <div class="hamburger" id="hamburger">
+      		&#9776;
+   		</div>
+
 		<!-- nav links  -->
-		<div class="nav-links">
+		<div class="nav-links nav-pages">
 			<ul class="link-list">
 				<li class="link-list-item"><a href="index.html">Home</a></li >
 				<li class="link-list-item selected"><a href="events.html">Events</a></li>
 				<li  class="link-list-item"><a href="services.html">Services</a></li >
 				<li  class="link-list-item"><a href="resources.html">Resources</a></li>
 				<li  class="link-list-item"><a href="testimonials.html">Testimonials</a></li >
-				
 				<li  class="link-list-item"><a href="about.html">About Us</a></li >
 				<li  class="link-list-item "><a href="faq.html">FAQ</a></li >
 			</ul>
 		</div>
 
 		<!-- call to action -->
-		<div class="nav-links">
+		<div class="nav-links nav-buttons">
 			<ul class="link-list calls">
-					<li class="call-list"><a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSfqIr4pIrxlak0kLSSF4EXADa_K0Ek7FzM8yLYN8Cy-8FprPw/viewform?embedded=true">Contact Us</a></li >
+					<a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSfqIr4pIrxlak0kLSSF4EXADa_K0Ek7FzM8yLYN8Cy-8FprPw/viewform?embedded=true"><li class="call-list">Contact Us</li></a>
 					<li class="call-list" id="openPopup"><a href="#">Donate</a></li >
 			</ul>
 		</div>
@@ -59,8 +63,14 @@
 
 	        <p>Any amount is greatly appreciated!</p>
 
-	        <button class="yes" id="yesButton">Yes, I'd like to Donate!</button>
-	        <button class="no" id="noButton">No thanks</button>
+	        <div class="donate-buttons">
+				<form action="https://www.paypal.com/donate" method="post" target="_top">
+					<input type="hidden" name="hosted_button_id" value="2G6U2DUL4BAVW">
+					<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button">
+					<img alt="" border="0" src="https://www.paypal.com/en_CA/i/scr/pixel.gif" width="1" height="1">
+				</form>
+	        	<button class="no" id="noButton">No thanks</button>
+	        </div>
 	    </div>
 	</div>
 
@@ -71,7 +81,7 @@
 
 		<!-- intro page -->
 		<section class="events-intro">
-				<div style="filter: opacity(90%);" class="events-intro-box">
+				<div style="filter: opacity(90%);" class="events-intro-box" id="eventspic-display">
 					<img id="eventspic" src="images/sm-conference.jpg">
 				</div>
 
@@ -98,21 +108,29 @@
 				<div class="table-box-details">
 					
 					<div class="event-details">
-						<p class="event-date">Feb 17-19, 2023</p>
+						<p class="event-date">2023</p>
 						<p>&#x2022;</p>
-						<p class="event-location">Florida, USA</p>
+						<p class="event-location">Brock University</p>
 					</div>
 					
-					<h3>2nd Annual Selective Mutism Foundation Conference</h3>
+					<h3>World's First Self-Serve Virtual Reality (VR) Software</h3>
 				</div>
 				
 				<div class="table-box-info">
-					<p>SMF is very excited to host the 2nd annual conference on
-					February 17th to 19th, 2023 in sunny Florida USA. There are 2 ways to attend the conference: in-person and virtual. All registrants will receive a copy of the recording at no charge!</p>
-				 
-					<p>We are honored to be partnered with Joleen R. Fernald Pediatric Therapy Services and SMHELP to be our partners for this. This conference is unlike any others, because we are featuring researchers and practitioners who have personally impacted by SM! It’s about time to hear from SM experts who have truly been “in your shoes” to share what works, and what doesn’t!</p>
+				<p>In 2023, Dr. Poling Bork partnered with Brock University to create the world’s FIRST self-serve virtual reality (VR) software as a treatment tool for individuals living with selective mutism!
 
-					<p class="link-text"><a target="_blank" href="https://www.smhelp.org/smf-conference.html">Visit the official website &#x2197;</a></p>
+				<p>“The VR software program places the individual with SM in simulated scenarios and social
+				contexts they would encounter in everyday life, such as interacting with classmates and the
+				teacher in a classroom, visiting a doctor’s office or ordering food from a restaurant.
+				Characters, who are either created virtually or portrayed by actual people through videos, are
+				pre-programmed to ask the user questions or provide responses to questions. The user practices
+				answering the character and making conversation as a way of slowly desensitizing them to the
+				anxiety that prevents them from being verbal in real life. Those who use the program can work through the challenges based on their comfort level by muting the sound, pausing the scene or using other features as they work through their anxieties
+				at their own pace….” (Cathy Majtenyi, 2023)</p>
+
+				<p>These VR apps will be available for public soon. Stay tuned for further announcement!</p>
+
+				<p class="link-text"><a target="_blank" href="https://brocku.ca/brock-news/2023/11/vpmi-partnership-creates-virtual-system-to-treat-selective-mutism/">Read more about this ground breaking innovation &#x2197;</a></p>
 				
 				</div>
 				

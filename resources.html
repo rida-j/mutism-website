@@ -21,8 +21,12 @@
 			<img src="images/logo.png">
 		</div>
 
+		 <div class="hamburger" id="hamburger">
+      		&#9776;
+   		</div>
+
 		<!-- nav links  -->
-		<div class="nav-links">
+		<div class="nav-links nav-pages">
 			<ul class="link-list">
 				<li class="link-list-item "><a href="index.html">Home</a></li >
 				<li class="link-list-item"><a href="events.html">Events</a></li>
@@ -36,9 +40,9 @@
 		</div>
 
 	<!-- call to action -->
-		<div class="nav-links">
+		<div class="nav-links nav-buttons">
 			<ul class="link-list calls">
-				<li class="call-list"><a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSfqIr4pIrxlak0kLSSF4EXADa_K0Ek7FzM8yLYN8Cy-8FprPw/viewform?embedded=true">Contact Us</a></li >
+				<a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSfqIr4pIrxlak0kLSSF4EXADa_K0Ek7FzM8yLYN8Cy-8FprPw/viewform?embedded=true"><li class="call-list">Contact Us</li></a>
 					<li class="call-list" id="openPopup"><a href="#">Donate</a></li >
 			</ul>
 		</div>
@@ -59,8 +63,14 @@
 
 	        <p>Any amount is greatly appreciated!</p>
 
-	        <button class="yes" id="yesButton">Yes, I'd like to Donate!</button>
-	        <button class="no" id="noButton">No thanks</button>
+	       <div class="donate-buttons">
+				<form action="https://www.paypal.com/donate" method="post" target="_top">
+					<input type="hidden" name="hosted_button_id" value="2G6U2DUL4BAVW">
+					<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button">
+					<img alt="" border="0" src="https://www.paypal.com/en_CA/i/scr/pixel.gif" width="1" height="1">
+				</form>
+	        	<button class="no" id="noButton">No thanks</button>
+	        </div>
 	    </div>
 	</div>
 
@@ -72,57 +82,64 @@
 
 
 		<!-- intro page -->
-		<section class="events-intro">
+		<!-- header -->
+		<section class="main-header resources-header">
+			<h1>Resources</h1> 
+		</section>
 
-			<div class="events-intro-box">
-					<h3>SMF is proud to present VOCAL. This book may change your child’s life in the matter of hours! Seriously</h3>
-					<p>Why Video self-modeling (VSM) is an *essential tool* for selective mutism intervention?
- 
+		<!-- landing page -->
 
-					Because it’s evidence based + it WORKS!
- 
+		<section id="vocal-info">
 
-					VOCAL is the only SM book that shows you how to do it yourself with an easy to understand, step-by-step guide.
- 
-					</p>
+			<div class="resource-text">
 
-					<p class="signup-button"><a href="https://a.co/d/8x8kn13">Order Here</a></p>
+					<h3>SMF is proud to present VOCAL. This book may change your child’s life in the matter of hours!</h3>
+
+					<p>In a peer-reviewed published studies, Dr. Poling Bork demonstrated how she successfully guided parents and educators to help their children overcome selective mutism within 130 minutes each (within 8 sessions). This is remarkable, especially since these children had long-standing SM and had received numerous failed interventions before Dr. Bork’s involvement. Due to this success, Dr. Bork is detailing the entire process in her book &quot;VOCAL: Help Your Child Conquer Selective Mutism in &lt;3 Hours with a Proven Strategy,&quot; so that everyone can access this easy-to-understand information, which tends to be reserved for the research world.</p>
+
+					<p>Within 2 years, VOCAL has touched SM communities worldwide and has been translated into 8 languages. </p>
+
+					<p>Dr. Bork herself, as well as all three of her children, have suffered from SM, so she has made it a personal mission to assist others impacted by it. VOCAL is one way toward spreading the awareness worldwide. Get a copy today as part of the proceed from amazon.ca will go toward Selective Mutism Foundation!</p>
+
+					<a class="signup-link" target="_blank" href="https://a.co/d/8x8kn13"><p class="signup-button">Order Here</p></a>
 				
 				</div>
 		
-			<div style="display: flex; flex-direction: row; gap:20px" class="events-intro-box">
-					<img style="object-fit: contain; width:50%"  src="images/vocal-cover.jpg">
-					<img style="object-fit: contain; width:50%" src="images/vocal-back.jpg">
-				</div>
+			<div class="resource-image">
+					<img id="vocal-img" src="images/vocal-cover.jpg">
+			</div>
 		</section>
 
 
+		<!-- past events header -->
+		<section class="inner-header" id="past-events" style="border-top: 0.3px solid black;">
+			<h1>Free Guides</h1>
+		</section>
 
 		<!-- section 2: RESOURCES ALL -->
 		<section id="resources-info">
 
 
 			<!-- bio 1 -->
-			<a class="resource-box" target="_blank" href="https://www.canva.com/design/DAGEZSJHZsg/zguox5cxT2iIgFvbAfsCYQ/view">
-			<div>
-			
+			<a class="resource-box" id="caregivers-box" target="_blank" href="https://www.canva.com/design/DAGEZSJHZsg/zguox5cxT2iIgFvbAfsCYQ/view">
+				<div >
 					<h4 class="fullName">Caregivers</h4>
-				
 			</div>
 			</a>
 
 	<!-- bio 1 -->
-			<a class="resource-box" target="_blank" href="https://www.canva.com/design/DAGESpSNocE/kv-S92YFWoIrt0FIEaGIQw/view">
+			<a class="resource-box" id="professionals-box" target="_blank" href="https://www.canva.com/design/DAGESpSNocE/kv-S92YFWoIrt0FIEaGIQw/view">
 			<div>
 			
 					<h4 class="fullName">Professionals</h4>
+
 				
 			</div>
 			</a>
 
 			<!-- bio 1 -->
-			<a class="resource-box" target="_blank" href="https://www.canva.com/design/DAGDtn8zlQc/PehQrBrKXjP5GOjS19C2Fg/view">
-			<div>
+			<a class="resource-box" id="educators-box" target="_blank" href="https://www.canva.com/design/DAGDtn8zlQc/PehQrBrKXjP5GOjS19C2Fg/view">
+			<div >
 			
 					<h4 class="fullName">Educators</h4>
 				

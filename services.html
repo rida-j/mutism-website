@@ -21,8 +21,12 @@
 				<img src="images/logo.png">
 		</div>
 
+		 <div class="hamburger" id="hamburger">
+      		&#9776;
+   		</div>
+
 		<!-- nav links  -->
-		<div class="nav-links">
+		<div class="nav-links nav-pages">
 			<ul class="link-list">
 				<li class="link-list-item"><a href="index.html">Home</a></li >
 				<li class="link-list-item "><a href="events.html">Events</a></li>
@@ -36,9 +40,9 @@
 		</div>
 
 		<!-- call to action -->
-		<div class="nav-links">
+		<div class="nav-links nav-buttons">
 			<ul class="link-list calls">
-				<li class="call-list"><a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSfqIr4pIrxlak0kLSSF4EXADa_K0Ek7FzM8yLYN8Cy-8FprPw/viewform?embedded=true">Contact Us</a></li >
+				<a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSfqIr4pIrxlak0kLSSF4EXADa_K0Ek7FzM8yLYN8Cy-8FprPw/viewform?embedded=true"><li class="call-list">Contact Us</li></a>
 					<li class="call-list" id="openPopup"><a href="#">Donate</a></li >
 			</ul>
 		</div>
@@ -59,8 +63,14 @@
 
 	        <p>Any amount is greatly appreciated!</p>
 
-	        <button class="yes" id="yesButton">Yes, I'd like to Donate!</button>
-	        <button class="no" id="noButton">No thanks</button>
+	        <div class="donate-buttons">
+				<form action="https://www.paypal.com/donate" method="post" target="_top">
+					<input type="hidden" name="hosted_button_id" value="2G6U2DUL4BAVW">
+					<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button">
+					<img alt="" border="0" src="https://www.paypal.com/en_CA/i/scr/pixel.gif" width="1" height="1">
+				</form>
+	        	<button class="no" id="noButton">No thanks</button>
+	        </div>
 	    </div>
 	</div>
 
@@ -82,7 +92,7 @@
 				<p>One study conducted by Dr. Bork demonstrated the success in treating children with SM within 130 minutes each of their time using the VSR technique is published in the peer-reviewed paper “Video self-modeling, fading, and reinforcement: An effective treatment of children with selective mutism” in Journal of Clinical Child Psychology and Psychiatry (2019).</p>
 			
 				
-				<p class="signup-button">Sign me up!</p>
+				<a class="signup-link" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSfqIr4pIrxlak0kLSSF4EXADa_K0Ek7FzM8yLYN8Cy-8FprPw/viewform?embedded=true"><p class="signup-button">Sign me up!</p></a>
 				
 				<p class="scroll-button"><a href="#services">See more services</a>&darr;</p>
 			
@@ -97,7 +107,7 @@
 			<h1 id="services">Workshops</h1>
 		</section>
 
-		<section class="inner-table" >
+		<section class="inner-table services-table">
 
 			<!-- 1 -->
 
@@ -110,7 +120,7 @@
 				<div class="table-box-info">
 					<p>A virtual or on site consultation with school personnel to discuss specific student needs and offer suggestions for accommodations and school-based intervention plan using the VSR method that has proven to treat SM in less than 3 hours of each child’s time.</p>
 					<p>This consultation focuses on assisting your child fully immersing themselves in the school. Specifically, with activities that foster speech. As a result, becoming fully verbal at school.</p>
-					<p class="link-text"><a href="#">Contact us for more details ↗</a></p>
+					<p class="link-text"><a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSfqIr4pIrxlak0kLSSF4EXADa_K0Ek7FzM8yLYN8Cy-8FprPw/viewform?embedded=true">Contact us for more details ↗</a></p>
 				</div>
 						
 			</div>
@@ -128,7 +138,7 @@
 				<div class="table-box-info">
 					<p>A virtual or on site consultation with care-takers (parents, grandparents, baby-sitters) to develop a home and community based intervention plan using the VSR method that has proven to treat SM in less than 3 hours of each child’s time.</p>
 					<p>To put it another way, this consultation aims improves the child’s ability to freely speak to every one at home and within their community.</p>
-					<p class="link-text"><a href="#">Contact us for more details ↗</a></p>
+					<p class="link-text"><a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSfqIr4pIrxlak0kLSSF4EXADa_K0Ek7FzM8yLYN8Cy-8FprPw/viewform?embedded=true">Contact us for more details ↗</a></p>
 				</div>		
 				
 			</div>
@@ -145,7 +155,7 @@
 
 				<div class="table-box-info">
 					<p>A virtual or on site consultation with all the stakeholders (classroom teachers, parents) to discuss how to develop and implement an individualized SM intervention for a child in all settings at once using the VSR method, which has proven to treat SM under 3 hours of each child’s time.</p>
-					<p class="link-text"><a href="#">Contact us for more details ↗</a></p>
+					<p class="link-text"><a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSfqIr4pIrxlak0kLSSF4EXADa_K0Ek7FzM8yLYN8Cy-8FprPw/viewform?embedded=true">Contact us for more details ↗</a></p>
 				</div>
 						
 			</div>
@@ -163,7 +173,7 @@
 					<p>This workshop presents the most up-to-date resources on SM. These resources include case studies on  etiology, prevalence, effects of SM as well as assessment and treatment approaches. Additionally, participants learn how to set up an inclusive and inviting learning environment, and to provide accommodations for the child in the school.</p>
 					<p>Furthermore, participants will learn why some school-based interventions do not work, and why the “VSR” method (coined by Dr. Bork) is the most effective approach for SM intervention.</p>
 					<p>Ultimately, Dr. Bork equips participants with the knowledge to develop their own individualized SM intervention based on the VSR technique.</p>
-					<p class="link-text"><a href="#">Contact us for more details ↗</a></p>
+					<p class="link-text"><a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSfqIr4pIrxlak0kLSSF4EXADa_K0Ek7FzM8yLYN8Cy-8FprPw/viewform?embedded=true">Contact us for more details ↗</a></p>
 				</div>
 						
 			</div>
@@ -184,7 +194,7 @@
 
 					<p>We encourage researchers, budding researchers, and or individuals who are interested in learning more about SM and wish to collaborate on research studies to attend.</p>
 
-					<p class="link-text"><a href="#">Contact us for more details ↗</a></p>
+					<p class="link-text"><a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSfqIr4pIrxlak0kLSSF4EXADa_K0Ek7FzM8yLYN8Cy-8FprPw/viewform?embedded=true">Contact us for more details ↗</a></p>
 				</div>
 				
 			</div>
@@ -195,38 +205,171 @@
 		</section>
 
 
-				<!-- past events header -->
+		<!-- COACHES INTRO-->
 		<div id="coaches-line"></div>
+		
 		<section class="inner-header" id="coaches-header">
-			<h1>Coaching</h1>
+			<h1>Coaches</h1>
 		</section>
 
 		<section class="inner-table" id="services">
+			<div class="table-box" style="border-top: 0px;">
+				<div class="table-box-info" style="width:100%;  padding-top:0px; padding-bottom: 40px;">
+							<p>	What we've observed while talking to and coaching families with a loved one suffering from selective mutism (SM) is that they have invested considerable time and effort in searching for a therapist experienced in treating SM in a timely and cost-effective manner. However, this has often proved challenging. That’s why we've decided to use this platform to connect families with coaches who have personally experienced SM, either themselves or through a loved one. These coaches genuinely understand SM because they have lived through it! If you or someone you know is looking for a coach to guide their family through their SM journey, feel free to look through the list of coaches available at SMF :)</p>
 
-		
+							<p>The Selective Mutism Foundation does not collect coaching fees; we simply facilitate connections within the SM community. SMF is not involved in the coaching sessions and does not guarantee their outcomes. We strongly advise caretakers to seek guidance from healthcare practitioners and other professionals. </p>
 
-			<!-- 6 -->
+							<p>Interested in joining our list of SM coaches? Please review the <a class="link-text-p" href="files/coaching.docx">coaching agreement form</a> for more information!  </p>
 
-				<div class="table-box">
-				
-				<div class="table-box-details">
-						<h3>Coaches</h3>
-				</div>
-			
-			<div class="table-box-info">
-				<p>	What we've observed while talking to and coaching families with a loved one suffering from selective mutism (SM) is that they have invested considerable time and effort in searching for a therapist experienced in treating SM in a timely and cost-effective manner. However, this has often proved challenging. That’s why we've decided to use this platform to connect families with coaches who have personally experienced SM, either themselves or through a loved one. These coaches genuinely understand SM because they have lived through it! If you or someone you know is looking for a coach to guide their family through their SM journey, feel free to look through the list of coaches available at SMF :)</p>
-
-<p>The Selective Mutism Foundation does not collect coaching fees; we simply facilitate connections within the SM community. SMF is not involved in the coaching sessions and does not guarantee their outcomes. We strongly advise caretakers to seek guidance from healthcare practitioners and other professionals. </p>
-
-<p>Interested in joining our list of SM coaches? Please review the coaching agreement form for more information!  </p>
-
-<a href="files/coaching.docx" target="_blank">coaching file</a>
-
-
-				</div>
-				
+						
+					</div>
 			</div>
+		</section>
+
+		<!-- COACHES TABLE -->
+		<section class="inner-table event coaches">
 		
+			
+			<!-- coach 1 -->
+			<div class="table-box">
+				<div class="table-box-details">
+					
+					<div>
+						<h3 class="coach-name">Dr. Poling Bork</h3>
+					</div>
+
+					<div class="coach-tags">
+						<p class="coach-timezone">ET (Toronto/NY)</p>
+						<p class="tag-break">&#x2022;</p>
+						<p class="link-text"><a href="http://polingbork.com">polingbork.com</a> ↗</p>
+					</div>
+
+
+					<div class="coach-details">
+						<p><span class="bold-word">Personal SM Experience</span>: Personally had SM, and 3 children with SM</p>
+						<p><span class="bold-word">Language</span>: English</p>
+					</div>
+				</div>
+				
+				<div class="table-box-info">
+					<img class="imgQuote" style="width:20px; margin-bottom: 10px; align-self: flex-start; padding-bottom:10px" src="https://www.svgrepo.com/download/71039/quotation-mark.svg">
+				<p>Parents: I completely understand all the struggles, worries, and stress you’re going through. I’ve raised THREE SM kids to become successful adults, plus helped many families to do the same! I will:
+
+				<ul>
+					<li>Help your child become comfortable in all situations to start speaking naturally (without pressure!).</li>
+					<li>Help advocate for your child at school and in all social contexts.</li>
+					<li>Provide helpful activities, some involve technologies!</li>
+					<li>Explain evidence-based techniques (in an easy-to-follow, step-by-step format) to you and those care for your child, therapist included!</li>
+				</ul>
+				<br>
+
+				<p>Count on me every step of the way (virtual or in-person). I know you CAN do this!</p>
+				
+				</div>
+			</div>
+
+			<!-- coach 2 -->
+			<div class="table-box">
+				<div class="table-box-details">
+					<div>
+						<h3 class="coach-name">Kelly Melhorn</h3>
+					</div>
+
+					<div class="coach-tags">
+						<p class="coach-timezone">ET (Toronto/NY)</p>
+						<p class="tag-break">&#x2022;</p>
+						<p class="link-text"><a href="http://smhelp.org">smhelp.org</a> ↗</p>
+					</div>
+
+
+					<div class="coach-details">
+						<p><span class="bold-word">Personal SM Experience</span>: A young child with SM</p>
+						<p><span class="bold-word">Language</span>: English</p>
+					</div>
+				</div>
+
+				<div class="table-box-info">
+					<img class="imgQuote" style="width:20px; margin-bottom: 10px; align-self: flex-start; padding-bottom:10px" src="https://www.svgrepo.com/download/71039/quotation-mark.svg">
+				<p>It is important for me to have an understanding of the individual – what they like, what is important to the family, how to incorporate goals and objectives into the family’s day to day life. I help parents have a firm understanding of what SM is and isn’t, I help find the important first steps to allow the child to begin making progress, I look at the various environments the child is in and help the parents understand what changes to make to set the child up for success, and most importantly, I’m someone who “gets it” – I know how hard this journey is, but I also know how amazing even the smallest of wins feel and I love to celebrate them with parents!</p>
+				
+				</div>
+			</div>
+
+			<!-- coach 3 -->
+			<div class="table-box">
+				<div class="table-box-details">
+					
+					<div>
+						<h3 class="coach-name">Mona Taremi</h3>
+					</div>
+
+					<div class="coach-tags">
+						<p class="coach-timezone">MT (Alberta/Denver)</p>
+					</div>
+
+					<div class="coach-details">
+						<p><span class="bold-word">Contact:</span> selectivemutismcanada@gmail.com</p>
+						<p><span class="bold-word">Personal SM Experience</span>: Personally had SM, and a young child with SM</p>
+						<p><span class="bold-word">Language</span>: English, Persian</p>
+					</div>
+				</div>
+				
+				<div class="table-box-info">
+					<img class="imgQuote" style="width:20px; margin-bottom: 10px; align-self: flex-start; padding-bottom:10px" src="https://www.svgrepo.com/download/71039/quotation-mark.svg">
+					<p>Living with selective mutism poses significant challenges, regardless of whether you’re a child, teenager, or an adult. The inability to communicate thoughts, ideas, and needs can be extremely debilitating. Based on my personal journey with selective mutism and my experiences as a parent, I’ve observed that it is often difficult for family, friends, teachers, and even some therapists to grasp, which limits their capacity to provide effective support. The reassuring news is that you’re not alone in this journey. You don’t have to navigate life with selective mutism feeling isolated. As an SM coach, my aim is to assist you in overcoming selective mutism by providing tailored support and equipping you with the necessary tools to lead a fulfilling life.</p>
+				</div>
+			</div>
+
+			<!-- coach 2 -->
+			<div class="table-box">
+				<div class="table-box-details">
+					
+
+					<div>
+						<h3 class="coach-name">Toni Pakula</h3>
+					</div>
+
+					<div class="coach-tags">
+						<p class="coach-timezone">GMT (New Zealand)</p>
+						<p class="tag-break">&#x2022;</p>
+						<p class="link-text"><a href="http://www.tonipakula.com">www.tonipakula.com</a> ↗</p>
+					</div>
+
+
+					<div class="coach-details">
+						<p><span class="bold-word">Personal SM Experience</span>: 3 children with SM</p>
+						<p><span class="bold-word">Language</span>: English</p>
+					</div>		
+
+
+				</div>
+				
+				<div class="table-box-info">
+					<img class="imgQuote" style="width:20px; margin-bottom: 10px; align-self: flex-start; padding-bottom:10px" src="https://www.svgrepo.com/download/71039/quotation-mark.svg">
+				<p>Hi, I am Toni Pakula, a holistic trauma-informed health practitioner specialising in Selective Mutism (SM). Drawing on a decade of personal experience and research, I offer bespoke services:</p>
+
+				<ul>
+					<li>Coaching: Personalised guidance for navigating SM.</li>
+					<li>Gradual Exposure: Step-by-step desensitization to anxiety.</li>
+					<li>Gradual Exposure: Step-by-step desensitization to anxiety.</li>
+					<li>Nutritional Support: Essential nutrients for holistic well-being.</li>
+					<li>Individualised Educational Plans: Strategies for academic success.</li>
+					<li>Presentations: Educating on SM awareness.</li>
+
+				</ul>
+				<br>
+
+				<p>No matter where you are based in the world, I provide comprehensive support through teletherapy addressing SM, by integrating the nervous system and gut health strategies</p>
+				
+				</div>
+			</div>
+
+
+			
+
+
+
+
 
 		</section>
 

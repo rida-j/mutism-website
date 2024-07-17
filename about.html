@@ -2,6 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Selective Mutism Foundation</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/modal-bio.css">
@@ -21,8 +22,12 @@
 			<img src="images/logo.png">
 		</div>
 
+		 <div class="hamburger" id="hamburger">
+      		&#9776;
+   		</div>
+
 		<!-- nav links  -->
-		<div class="nav-links">
+		<div class="nav-links nav-pages">
 			<ul class="link-list">
 				<li class="link-list-item "><a href="index.html">Home</a></li >
 				<li class="link-list-item"><a href="events.html">Events</a></li>
@@ -36,9 +41,9 @@
 		</div>
 
 	<!-- call to action -->
-		<div class="nav-links">
+		<div class="nav-links nav-buttons">
 			<ul class="link-list calls">
-					<li class="call-list"><a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSfqIr4pIrxlak0kLSSF4EXADa_K0Ek7FzM8yLYN8Cy-8FprPw/viewform?embedded=true">Contact Us</a></li >
+					<a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSfqIr4pIrxlak0kLSSF4EXADa_K0Ek7FzM8yLYN8Cy-8FprPw/viewform?embedded=true"><li class="call-list">Contact Us</li></a>
 					<li class="call-list" id="openPopup"><a href="#">Donate</a></li >
 			</ul>
 		</div>
@@ -59,8 +64,14 @@
 
 	        <p>Any amount is greatly appreciated!</p>
 
-	        <button class="yes" id="yesButton">Yes, I'd like to Donate!</button>
-	        <button class="no" id="noButton">No thanks</button>
+	       <div class="donate-buttons">
+				<form action="https://www.paypal.com/donate" method="post" target="_top">
+					<input type="hidden" name="hosted_button_id" value="2G6U2DUL4BAVW">
+					<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button">
+					<img alt="" border="0" src="https://www.paypal.com/en_CA/i/scr/pixel.gif" width="1" height="1">
+				</form>
+	        	<button class="no" id="noButton">No thanks</button>
+	        </div>
 	    </div>
 	</div>
 
@@ -124,15 +135,12 @@
 			   			<h4 class="fullName">Dr. Poling Bork, <span>PhD</span></h4>
 						<p class="member-status director"><span>&#x2022;</span> Executive Director</p>
 						<p class="member-status director"><span>&#x2022;</span> Director of Research</p>
-						<p>Dr. Bork is the founder, Executive Director and Director of Research for the Selective Mutism Foundation. Having devoted over 15 years researching Selective Mutism (SM) including 6 years of active involvement in helping her son overcome a severe form of SM, Dr. Bork is dedicating her research in the efficacy and rapidity of SM treatments for children with SM. Dr. Bork is an active researcher who publishes in peer reviewed journals, and has been invited to over 30 organizations and schools to speak on the topic of SM. 
+						<p>Dr. Bork is the founder, Executive Director and Director of Research for the Selective Mutism Foundation. Having devoted 20 years researching Selective Mutism (SM) including 6 years of active involvement in helping her own children overcome SM, Dr. Bork is dedicating her research in the efficacy and rapidity of SM treatments. She is an active researcher who publishes in per reviewed journals, and has been invited to over numerous organizations and schools to speak on the topic of SM. Her one study published by the Journal of Clinical Child Psychology and Psychiatry (2020) delineated the treatment of 3 children with SM using VSR—a combined behavioural approach—within the school settings. Unlike most studies which documented lengthy treatment of SM (many were unsuccessful and lasted for months and even years), all children in her study were successfully treated, with each child receiving less than 130 minutes of treatment time within an 8-week period. </p>
 
-						<br><br>
-						Her most recent study published by the Journal of Clinical Child Psychology and Psychiatry delineated the treatment of 3 young children with SM using a combined behavioural approach within school settings. Unlike most studies which documented lengthy treatment of SM (many were unsuccessful and lasted for months and even years), all children in her study were successfully treated, with each child receiving less than 130 minutes of treatment time within an 8-week period.
+						<p>With her background in Computer Science, Dr. Bork also actively explored the use of technology for SM treatment. She is the first (known) researcher to propose using software applications to help shape verbal behaviour (Bork, 2010). Over the past 10+ years, she has designed and overseen developments of software applications assisting individual with SM as well as other conditions. </p>
 
-						<br><br>
-						With her background in Computer Science, Dr. Bork also actively explored the use of technology for SM treatment. She is the first (known) researcher to propose using software applications to help shape verbal behaviour (Bork, 2010). Over the past few years, she has designed and overseen several developments of software applications assisting individuals with special needs (e.g., SM, stuttering, intellectual and developmental disabilities, etc.). Some of them are currently available free for download in iTunes.</p>
-
-
+						<p>Dr. Bork is currently conducting research on incorporating virtual reality (VR) and artificial intelligence to improve the treatment process. Her recent study involving older children trialing the world’s first self-served virtual reality software has yielded noteworthy results.</p>
+						
 			    	</div>
 			    </div>
 			 </div>
@@ -336,6 +344,37 @@
 			 </div>
 			</div>
 
+			<!-- bio 6 -->
+			<div class="bio-box">
+			
+				<div class="bio-image" >
+				<img src="" class="team-member" data-target="volunteer6" >
+				</div>
+
+				<div class="bio-name">
+					<h4 class="fullName">Rida Jafar<span></span></h4>
+					<p class="member-status volunteer"><span>&#x2022;</span>Volunteer</p>
+				</div>
+				
+			</div>
+
+			<!-- bio 6 modal -->
+			<div id="volunteer6" class="modal-bio">
+			  <div class="modal-content-bio">
+			    <span class="close-bio" onclick="closeModal('volunteer6')">&times;</span>
+			    <div class="bio-info-box">
+			    	<div class="bio-info-image">
+			    		<img src="">
+			    	</div>
+			    	<div class="bio-info-text">
+			    	<h4 class="fullName">Rida Jafar<span></span></h4>
+					<p class="member-status volunteer"><span>&#x2022;</span> Volunteer</p>
+						<p>Rida used her skills in design and coding to recreate the SMF website into a modern, user-friendly experience. As a dedicated volunteer, she brings creativity and passion to every aspect of her work, and continues to keep our website looking fresh and running smoothly.</p>
+			    	</div>
+			    </div>
+			 </div>
+			</div>
+
 			<!-- bio 3 -->
 			<div class="bio-box">
 			
@@ -376,7 +415,7 @@
 				</div>
 
 				<div class="bio-name">
-					<h4 class="fullName">Cole<span></span></h4>
+					<h4 class="fullName">Cole Wilson<span></span></h4>
 					<p class="member-status volunteer"><span>&#x2022;</span>Volunteer</p>
 				</div>
 				
@@ -391,7 +430,7 @@
 			    		<img src="images/cole.jpg">
 			    	</div>
 			    	<div class="bio-info-text">
-			    	<h4 class="fullName">Cole<span></span></h4>
+			    	<h4 class="fullName">Cole Wilson<span></span></h4>
 					<p class="member-status volunteer"><span>&#x2022;</span> Volunteer</p>
 						<p>I joined the Selective Mutism Foundation as a volunteer in 2022 during the first annual Selective Mutism conference. During the first conference, I helped prepare the seating area for guests and speakers and assisted in leading activities for the children who attended the conference with their parents. At that time, I was enrolled in Brock University’s Bachelor of Science (Honours) Neuroscience program researching traumatic brain injury and how injury characteristics influenced emotional regulation and cognitive fatigue. I am still a volunteer for the Selective Mutism Foundation and graduated with my Bachelor of Science program. I am enrolled in Brock University’s Master of Science Biological Sciences Program specializing in Neurobiology and Physiology.</p>
 			    	</div>
@@ -425,6 +464,37 @@
 			    	<h4 class="fullName">Jercin Elsa Koshy<span></span></h4>
 					<p class="member-status volunteer"><span>&#x2022;</span> Volunteer</p>
 						<p>Jercin has been a dedicated volunteer with the Selective Mutism Foundation since March 2024, contributing to content creation and research. </p>
+			    	</div>
+			    </div>
+			 </div>
+			</div>
+
+			<!-- bio 7 -->
+			<div class="bio-box">
+			
+				<div class="bio-image" >
+				<img src="" class="team-member" data-target="volunteer7" >
+				</div>
+
+				<div class="bio-name">
+					<h4 class="fullName">Mona<span></span></h4>
+					<p class="member-status volunteer"><span>&#x2022;</span>Volunteer</p>
+				</div>
+				
+			</div>
+
+			<!-- bio 7 modal -->
+			<div id="volunteer7" class="modal-bio">
+			  <div class="modal-content-bio">
+			    <span class="close-bio" onclick="closeModal('volunteer7')">&times;</span>
+			    <div class="bio-info-box">
+			    	<div class="bio-info-image">
+			    		<img src="">
+			    	</div>
+			    	<div class="bio-info-text">
+			    	<h4 class="fullName">Mona<span></span></h4>
+					<p class="member-status volunteer"><span>&#x2022;</span> Volunteer</p>
+						<p>Mona ....</p>
 			    	</div>
 			    </div>
 			 </div>
