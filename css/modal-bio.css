@@ -81,6 +81,15 @@
 
 @media only screen and (max-width: 767px) {
 
+  .bio-info-box {
+  overflow: scroll;
+}
+
+.bio-info-text {
+
+  overflow: scroll;
+}
+
     .bio-info-text {
       width: 100%;
     }
