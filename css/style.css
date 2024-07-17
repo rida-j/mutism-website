@@ -1657,6 +1657,11 @@ padding: 0px;
 
 
 @media only screen and (max-width: 767px) {
+
+
+	main {
+	overflow-y: scroll;
+}
 /*SERVICES*/
 
 	.inner-table.coaches > .table-box  {
